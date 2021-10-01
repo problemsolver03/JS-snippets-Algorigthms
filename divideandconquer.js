@@ -3,7 +3,6 @@ const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const dnc = (arr, findItem) => {
   let arrCopy = [...arr];
   let arrLength = Math.floor(arrCopy.length / 2);
-  console.log(arrCopy, arrLength);
   if (arrLength < 0) {
     return null;
   } else if (arrCopy[arrLength] < findItem) {
@@ -17,4 +16,4 @@ const dnc = (arr, findItem) => {
   }
 };
 
-console.log(dnc(arr, 1));
+console.log(dnc(arr, 10));
