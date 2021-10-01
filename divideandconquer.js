@@ -11,7 +11,6 @@ const dnc = (arr, findItem) => {
     return dnc(arrCopy, findItem);
   } else if (arrCopy[arrLength] > findItem) {
     arrCopy = arrCopy.splice(0, arrLength);
-
     return dnc(arrCopy, findItem);
   } else if (arrCopy[arrLength] === findItem) {
     return true;
