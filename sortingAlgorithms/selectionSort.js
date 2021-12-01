@@ -3,16 +3,14 @@ function selectionSort(arr) {
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr.length - 1; j++) {
       if (arr[j + 1] < arr[j]) {
-        console.log(min);
         min = j;
-        let temp = arr[0];
-        arr[0] = arr[min];
-        arr[j] = temp;
+        let temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
       }
     }
   }
-  console.log(arr);
   return arr;
 }
 
-selectionSort([3, 2, 1]);
+selectionSort([3, 2, 1, 5, 9]);
