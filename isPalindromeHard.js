@@ -1,5 +1,5 @@
 var isPalindrome = function (s) {
-  // repaling all special characeters and white space from the input
+  // repalcing all special characeters and white space from the input
   let replaceSpace = s
     .replace(/[^a-zA-Z0-9]/g, "")
     .replace(/\s/g, "")
